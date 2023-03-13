@@ -22,7 +22,7 @@ public class Main {
 		switch (option) {
 		case 1: {
 			String generatedEmail = serviceCredentials.generateEmailAddress(employee.getFirstName().toLowerCase(),
-					employee.getLastName().toLowerCase(), employee.getCompany().toLowerCase(), "tech");
+					employee.getLastName().toLowerCase(), "tech", employee.getCompany().toLowerCase());
 			String generatedPassword = serviceCredentials.generateCredentials(12);
 			employee.setEmail(generatedEmail);
 			employee.setPassword(generatedPassword);
@@ -31,7 +31,7 @@ public class Main {
 		}
 		case 2: {
 			String generatedEmail = serviceCredentials.generateEmailAddress(employee.getFirstName().toLowerCase(),
-					employee.getLastName().toLowerCase(), employee.getCompany().toLowerCase(), "admin");
+					employee.getLastName().toLowerCase(),"admin", employee.getCompany().toLowerCase());
 			String generatedPassword = serviceCredentials.generateCredentials(12);
 			employee.setEmail(generatedEmail);
 			employee.setPassword(generatedPassword);
@@ -40,7 +40,7 @@ public class Main {
 		}
 		case 3: {
 			String generatedEmail = serviceCredentials.generateEmailAddress(employee.getFirstName().toLowerCase(),
-					employee.getLastName().toLowerCase(), employee.getCompany().toLowerCase(), "hr");
+					employee.getLastName().toLowerCase(), "hr", employee.getCompany().toLowerCase());
 			String generatedPassword = serviceCredentials.generateCredentials(12);
 			employee.setEmail(generatedEmail);
 			employee.setPassword(generatedPassword);
@@ -49,7 +49,7 @@ public class Main {
 		}
 		case 4: {
 			String generatedEmail = serviceCredentials.generateEmailAddress(employee.getFirstName().toLowerCase(),
-					employee.getLastName().toLowerCase(), employee.getCompany().toLowerCase(), "legal");
+					employee.getLastName().toLowerCase(), "legal", employee.getCompany().toLowerCase());
 			String generatedPassword = serviceCredentials.generateCredentials(12);
 			employee.setEmail(generatedEmail);
 			employee.setPassword(generatedPassword);
